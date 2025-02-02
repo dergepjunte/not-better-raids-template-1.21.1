@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "not-better-raids",
+	"version": "${version}",
+	"name": "Not Better Raids",
+	"description": "Bored of normal Raids? Here is the 'Not Better Raids Mod' ",
+	"authors": [
+		"Der_Gepjunte",
+		"CarryByArthur"
+	],
+	"contact": {
+		"sources": "https://github.com/dergepjunte/NotBetterRaids"
+	},
+	"license": "MIT",
+	"icon": "assets/not-better-raids/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.arthurpjun.notbetterraids.NotBetterRaids"
+		],
+		"fabric-datagen": [
+			"me.arthurpjun.notbetterraids.NotBetterRaidsDataGenerator"
+		],
+		"client": [
+			"me.arthurpjun.notbetterraids.NotBetterRaidsClient"
+		]
+	},
+	"mixins": [
+		"not-better-raids.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
